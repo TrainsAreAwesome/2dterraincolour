@@ -1,1 +1,1 @@
-this might have some stuff soon
+a 2d, colour terrain generator will be in the repo soon
