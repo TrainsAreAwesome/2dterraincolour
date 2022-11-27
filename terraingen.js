@@ -1,5 +1,6 @@
 export { terrainGen }
 
+
 let terrainAmount = 100
 
 function RNG(RNGMax) // random number gen
