@@ -13,9 +13,10 @@ const ch = chalk
 // end of test, should make segment of the sky with a tiny cloud if run
 console.log(chalk.white.hidden("test text"))
 
-let test = ("testruiuiersdiu")
+let test = ("rrrrr")
 
 //loading screen, yeah i had to do that >>>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     i know it looks terrible
-
+let itworks = ("it")
 cl(ch.whiteBright(" |                   |‾‾‾‾‾‾‾‾‾‾‾‾|              /\\              |‾‾‾‾‾‾‾‾‾‾‾\\        |       |\\       |        |‾‾‾‾‾‾‾‾‾‾‾‾ \n |                   |            |             /  \\             |            |               | \\      |        | \n |                   |            |            /    \\            |            |               |  \\     |        | \n |                   |            |           /      \\           |            |       |       |   \\    |        |      ______  \n |                   |            |          /________\\          |            |       |       |    \\   |        |            | \n |                   |            |         /          \\         |            |       |       |     \\  |        |            | \n |                   |            |        /            \\        |            |       |       |      \\ |        |            | \n |____________       |____________|       /              \\       |___________/        |       |       \\|        |____________| .........."))
 render(test)
+
