@@ -63,7 +63,7 @@ let terrainGen = () => {
     let loopNumber = 0
     while (loopNumber <= terrainAmount) {
         
-        console.log("test")
+        
         
         
         

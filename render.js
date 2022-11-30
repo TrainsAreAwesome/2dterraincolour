@@ -23,23 +23,13 @@ let brightMagenta = ("/")
 let brightCyan = ("v")
 let brightWhite = ("e")
 
-// the colour codes above this line are the ones you need to use to get it to render, the vars below this line are used in the renderers code to define the actual colour values for chalk (how this uses colours on the terminal)
-
-
-let ifError = false
 
 
 let render = (line) => { //this is the funtion thats called from index.js, and line is the list of colour codes to be rendered
     let commandConstuct = ("console.log(") // this is the var for the console.log() command that will be constructed in the loop below, dont worry that its a string or has one bracket, its ment to be like that
-    let lineLength = line.length -1 //its what it says it is
+    let lineLength = line.length - 1 //its what it says it is
 
     for (let i = 0; i <= lineLength; i++) { // this loop starts the command build proscess
-
-        
-        
-        
-        console.log(chalk.bgBlack.hidden("1"),chalk.bgWhite.hidden("1"))
-
 
         if (line.charAt(i) === black) {
             commandConstuct = commandConstuct + "chalk.bgBlack.hidden('1'),"
@@ -50,7 +40,7 @@ let render = (line) => { //this is the funtion thats called from index.js, and l
             commandConstuct = commandConstuct + "chalk.bgRed.hidden('1'),"
 
         }
-       
+
         if (line.charAt(i) === green) {
             commandConstuct = commandConstuct + "chalk.bgGreen.hidden('1'),"
 
@@ -120,23 +110,18 @@ let render = (line) => { //this is the funtion thats called from index.js, and l
             commandConstuct = commandConstuct + "chalk.bgWhiteBright.hidden('1'),"
 
         }
-       
-
-
-        console.log(i)
-
-
-    }
-
-    if (ifError === false) {
         
+        // this function doesnt work for some reason 
+        // if (line.charAt(i) != black || red || yellow || blue || green || magenta || cyan || white || grey || brightBlue || brightCyan || brightGreen || brightMagenta || brightRed || brightWhite || brightYellow) { 
+
+            // this if statement checks if there is no colour code, and if there isnt an error will pop up
+           // console.log("ERROR! NO COLOUR CODE ON AT LEAST ONE PIXEL! CHECK CODE YOUR CODE (MIGHT BE A TYPO)")
+         //   break
+       // }
     }
-    commandConstuct = commandConstuct + "chalk.bgWhite.white('1'))"
-    console.log(commandConstuct)
-    eval(commandConstuct)
-    
-    console.log("\n\n\n\n\n\n\n\n\n\n")
 
- 
+    commandConstuct.slice(0, -1) //formats the end of the line
+    commandConstuct = commandConstuct + ")" // ^
 
+    eval(commandConstuct) //prints the line
 }

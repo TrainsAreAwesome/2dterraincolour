@@ -11,12 +11,42 @@ const ch = chalk
 //console.log(chalk.bgBlue.hidden("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"))
 //console.log(chalk.bgBlue.hidden("aaaaaaaaaaaaaaaaaaaaaaaa") + chalk.bgWhite.hidden("ccccccccccccccccccccccccccccccccc" ) + chalk.bgBlue.hidden("aaaaaaaaaaaaaaaaaaaaaaaaaaa"))
 // end of test, should make segment of the sky with a tiny cloud if run
-console.log(chalk.white.hidden("test text"))
+
 
 let test = ("rrrrr")
 
 //loading screen, yeah i had to do that >>>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     i know it looks terrible
-let itworks = ("it")
-cl(ch.whiteBright(" |                   |‾‾‾‾‾‾‾‾‾‾‾‾|              /\\              |‾‾‾‾‾‾‾‾‾‾‾\\        |       |\\       |        |‾‾‾‾‾‾‾‾‾‾‾‾ \n |                   |            |             /  \\             |            |               | \\      |        | \n |                   |            |            /    \\            |            |               |  \\     |        | \n |                   |            |           /      \\           |            |       |       |   \\    |        |      ______  \n |                   |            |          /________\\          |            |       |       |    \\   |        |            | \n |                   |            |         /          \\         |            |       |       |     \\  |        |            | \n |                   |            |        /            \\        |            |       |       |      \\ |        |            | \n |____________       |____________|       /              \\       |___________/        |       |       \\|        |____________| .........."))
-render(test)
 
+console.log("\n\n\n\n\n\n\n\n\n\n")
+let loading1 = ("-e-------------------eeeeeeeeeeeeee--------------ee--------------eeeeeeeeeeeee--------e-------ee-------e--------eeeeeeeeeeeee---------------------")
+let loading2 = ("-e-------------------e------------e-------------e--e-------------e------------e---------------e-e------e--------e---------------------------------")
+let loading3 = ("-e-------------------e------------e------------e----e------------e------------e---------------e--e-----e--------e---------------------------------")
+let loading4 = ("-e-------------------e------------e-----------e------e-----------e------------e-------e-------e---e----e--------e-------eeeee---------------------")
+let loading5 = ("-e-------------------e------------e----------eeeeeeeeee----------e------------e-------e-------e----e---e--------e------------e--------------------")
+let loading6 = ("-e-------------------e------------e---------e----------e---------e------------e-------e-------e-----e--e--------e------------e--------------------")
+let loading7 = ("-e-------------------e------------e--------e------------e--------e-----------e--------e-------e------e-e--------e------------e--------------------")
+let loading8 = ("-eeeeeeeeeeeee-------eeeeeeeeeeeeee-------e--------------e-------eeeeeeeeeeee---------e-------e-------ee--------eeeeeeeeeeeeee---e---e---e--------")
+
+
+render(loading1)
+render(loading2)
+render(loading3)
+render(loading4)
+render(loading5)
+render(loading6)
+render(loading7)
+render(loading8)
+
+setTimeout(() => {
+
+render("rrrrr")
+
+
+
+
+
+
+
+
+
+}, 5000);
