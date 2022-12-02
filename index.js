@@ -39,7 +39,7 @@ render(loading8)
 
 setTimeout(() => {
 
-render("renderer in node js using chalk")
+render("renderer in node js using chalk - iguisdgigu")
 
 
 
