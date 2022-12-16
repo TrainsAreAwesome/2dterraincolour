@@ -32,7 +32,7 @@ let render = (line) => { //this is the funtion thats called from index.js, and l
     for (let i = 0; i <= lineLength; i++) { // this loop starts the command build proscess
 
         if (line.charAt(i) === black) {
-            commandConstuct = commandConstuct + " chalk.bgBlack.hidden('-') +"
+            commandConstuct = commandConstuct + " chalk.reset(' ') +"
 
         }
 
@@ -112,7 +112,7 @@ let render = (line) => { //this is the funtion thats called from index.js, and l
         }
     }
     
-    commandConstuct = commandConstuct + " chalk.bgBlack.hidden('-'))"
+    commandConstuct = commandConstuct + " chalk.reset(' '))"
     //console.log(commandConstuct)
 
     eval(commandConstuct) //prints the line
